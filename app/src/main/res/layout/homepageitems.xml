@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/pa"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/delete"
+            android:src="@drawable/baseline_more_vert_24"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/levelAndSemester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="200l (First semester)"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/gradePointsText"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/levelAndSemester"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Grade points:" />
+
+        <TextView
+            android:id="@+id/gradePoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelAndSemester"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/gradePointsText"
+            android:text="32" />
+
+        <TextView
+            android:id="@+id/creditUnitText"
+            android:layout_width="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelAndSemester"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/gradePoints"
+            android:text="Credit unit:" />
+
+        <TextView
+            android:id="@+id/creditUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelAndSemester"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/creditUnitText"
+            android:text="30"
+            android:textAppearance="?attr/textAppearanceCaption" />
+
+
+        <TextView
+            android:id="@+id/GPAText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelAndSemester"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/creditUnit"
+            android:text="GPA:" />
+
+        <TextView
+            android:id="@+id/GPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelAndSemester"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/GPAText"
+            android:text="4.2"
+            android:textAppearance="?attr/textAppearanceCaption" />
+
+
+    </RelativeLayout>
+</layout>

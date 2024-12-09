@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/course"
+            android:hint="Enter course code"
+            android:gravity="center"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Units"
+            android:layout_below="@id/course"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:id="@+id/unitsText"
+            android:layout_height="wrap_content" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingStart="15dp"
+            android:id="@+id/unitsHSV"
+            android:layout_below="@id/unitsText"
+            android:backgroundTint="?attr/colorOnPrimary"
+            android:scrollbars="none">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/unitsCG"
+                android:layout_width="wrap_content"
+                app:selectionRequired="true"
+                android:layout_gravity="bottom"
+                android:backgroundTint="?attr/colorOnPrimary"
+                app:singleSelection="true"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/twoUnits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="?attr/colorOnTertiary"
+                    style="@style/CustomChipChoice"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/services"
+                    android:textColor="?attr/colorOnTertiary"
+                    style="@style/CustomChipChoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/unitsHSV"
+            android:layout_marginStart="10dp"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:textStyle="bold"
+            android:text="Grade"
+            android:id="@+id/gradeText"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingStart="15dp"
+            android:layout_below="@id/gradeText"
+            android:backgroundTint="?attr/colorOnPrimary"
+            android:scrollbars="none">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/gradesChipGroup"
+                android:layout_width="wrap_content"
+                app:selectionRequired="true"
+                android:layout_gravity="bottom"
+                android:backgroundTint="?attr/colorOnPrimary"
+                app:singleSelection="true"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/a"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textColor="?attr/colorOnTertiary"
+                    style="@style/CustomChipChoice"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:textColor="?attr/colorOnTertiary"
+                    style="@style/CustomChipChoice"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:textColor="?attr/colorOnTertiary"
+                    style="@style/CustomChipChoice"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    android:textColor="?attr/colorOnTertiary"
+                    style="@style/CustomChipChoice"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E"
+                    android:textColor="?attr/colorOnTertiary"
+                    style="@style/CustomChipChoice"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F"
+                    android:textColor="?attr/colorOnTertiary"
+                    style="@style/CustomChipChoice"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Done"
+            android:id="@+id/done"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</layout>
